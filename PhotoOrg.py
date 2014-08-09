@@ -12,7 +12,7 @@ def findFiles(dir):
 	dir = checkFolder(dir)
 	if dir is None: return
 	#search for target extensions
-	imgExt = ("jpg", "jpeg", "png", "bmp")
+	imgExt = ("jpg", "jpeg", "png", "bmp", "mov", "mp4")
 	allFiles = []
 	for file in listdir(dir):
 		#case invariance
@@ -71,7 +71,6 @@ def getStats(dir):
  		stats.append(getFileTime(file)[0])
 
  	print stats
-#	print allFiles
 
 
 def checkFolder(dir):
